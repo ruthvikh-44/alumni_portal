@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestl.css">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/202dba6802.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <img src="images/2.png" alt="Logo Image" class="Logo" >
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#services">INFO</a></li>
+                <li><a href="#logins">SIGN UP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+        <div class="slide">
+            <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                  <q>20 students got selected for an internship cum placement program for a CTC of 30 lakhs.</q>
+                  <p class="author">- AMAZON</p>
+                </div>
+              
+                <div class="mySlides">
+                  <q>17 students got selected for an internship cum placement program for a CTC of 22 lakhs.</q>
+                  <p class="author">Goldman Sachs</p>
+                </div>
+              
+                <div class="mySlides">
+                  <q>Training session conducted on RPA by soumya choudhary, vice president, I&T labs.</q>
+                  <p class="author">T & P </p>
+                </div>
+              
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+              <script>var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }</script> 
+        </div>
+        <div class="container">
+            
+            <div class="header-text">
+                <br><br><br>
+                <img style="margin-left:550px;height:300px;width: 300px;" src="images/help.png">
+                <h1 Style="font-size:100px;" align="center"> STAY CONNECTED.</h1>
+                
+                <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ad iure provident necessitatibus quae dolorem quod incidunt nostrum nisi sed voluptatum, non expedita perferendis laudantium ducimus fugit omnis, magni eum.</p>-->
+                   
+            </div>
+        </div>
+        
+    </div>
+    <!-- -------------features----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">FEATURES</h1>
+             <div class="services-list1">
+                <div>
+                    <img src="images/index_acad.jpg" alt="" width="350px" height="175px">
+                    <!-- <i class="fa-solid fa-graduation-cap" style="color: blueviolet;"></i> -->
+                    
+                    <h2>Academic Guidance</h2>
+                    <p style="font-size: 18px; color:rgb(40, 39, 39)">Students can gain the best academic guidance from their college passed outs who accurately know the academic pace at the college and the industry requirements.</p>
+
+                </div>
+                <div>
+                    <img src="images/index_scho.jpg" alt="" width="350px" height="175px">
+                    <!-- <i class="fa-solid fa-money-bill" style="color: blueviolet;"></i> -->
+                    
+                    <h2>Scholarships</h2>
+                    <p style="font-size: 18px; color:rgb(40, 39, 39)">Students are given scholarships based on their performance and skill set from the donations made by alumni </p>
+                    
+            
+                </div>
+                <div>
+                    <img src="images/index_empop.jpeg" alt="" width="350px" height="175px">
+                    <!-- <i class="fa-solid fa-users-between-lines" style="color: blueviolet;"></i> -->
+                    <h2>Employment Oppurtunities</h2>
+                    <p style="font-size: 18px; color:rgb(40, 39, 39)">Students can find the best employement opportunities from the alumni and curated great oppotunities suggested to suit their skillsets </p>
+        
+                </div>
+             </div>
+        </div>
+
+    </div>
+    <!-- -----------login--------- -->
+    <div id="logins">
+        <div class="container">
+            <h1 class="sub-title">JOIN US</h1>
+             <div class="services-list">
+                <div style="background-image: url(images/index_student.png);">
+                    <i class="fa-sharp fa-solid fa-book-open-reader" style="color: blueviolet;"></i>
+                
+
+                    <h2>For Students</h2>
+                    <p style="font-size: 18px; color:rgb(40, 39, 39)">for undergraduate students</p>
+                    <div class="buttons">
+                    <form action="registration.html" method="post" class="ssign">
+                        <input type="submit" name="" id="" value="Sign up">
+                    </form>
+                    </div>
+                    <div class="buttons">
+                    <form action="student_login.php" method="post" class="slogin">
+                        <input type="submit" name="" id="" value="Login">
+                    </form>
+                </div>
+
+                </div>
+                <div style="background-image: url(images/index_alumni.png);">
+                    <i class="fa-solid fa-graduation-cap" style="color: blueviolet;"></i>
+                    <h2>For Alumni</h2>
+                    <p style="font-size: 18px; color:rgb(40, 39, 39);">For passed out students from college who have <br> settled in good job positions.</p>
+                    <div class="buttons">
+                    <form action="mentor_reg.html" method="post">
+                        <input type="submit" name="" id="" value="Sign up">
+                    </form>
+                    </div>
+                    <div class="buttons" >
+                    <form action="mentor_login.php" method="post">
+                        <input type="submit" name="" id="" value="Login">
+                    </form>
+                    </div>
+                    </div>
+                
+             </div>
+        </div>
+
+    </div>
+    <!-- ---------contact us-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <br><br>
+                    <h1 class="sub-title">CONTACT US</h1>
+                    <p><i class="fa-regular fa-envelope" style="color: #3e34be;"></i> Teamcosmos@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #3e34be;"></i>9389138913</p>
+                    <div class="social-icons">
+                       <a href="#"><i class="fa-brands fa-facebook" ></i></a> 
+                       <a href="#"><i class="fa-brands fa-instagram" ></i></a> 
+                       <a href="#"><i class="fa-brands fa-square-twitter" ></i></a> 
+                       <a href="#"><i class="fa-brands fa-linkedin" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var sides = document.getElementById('sidemenu');
+        function openmenu(){
+            sides.style.right='0';
+        }
+        function closemenu(){
+            sides.style.right='-200px'
+        }
+    </script>
+</body>
+</html>

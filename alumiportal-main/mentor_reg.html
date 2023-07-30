@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <title>Registration form</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">Registration</div>
+            <form action="mentor_reg.php" method="post" enctype="multipart/form-data">
+                <div class="card-details">
+                    <div class="card-box">
+                        <span class="details">Full name</span>
+                        <input type="text" name="fname" id="" placeholder="Enter your name">
+
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="email" id="" placeholder="Enter your email">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Reg. No.</span>
+                        <input type="text" name="reg" id="" placeholder="Enter your registration no.">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Department</span>
+                        <input type="text" name="dept" id="" placeholder="Enter your Department">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Batch</span>
+                        <input type="text" name="batch" id="" placeholder="Enter your batch">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Phone Number</span>
+                        <input type="phone" name="phone" id="" placeholder="phone number">
+                        
+                    </div>
+                    
+                    <div class="card-box">
+                        <span class="details">Company</span>
+                        <input type="text" name="company" id="" placeholder="Company name">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Designation</span>
+                        <input type="text" name="design" id="" placeholder="Designation">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Work Experience</span>
+                        <input type="number" name="exp" id="" placeholder="Experience">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="pass" id="" placeholder="Enter your password">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" name="cpass" id="" placeholder="Confirm Password">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Linkedin Url</span>
+                        <input type="url" name="linked" id="" placeholder="Linkedin url">
+                        
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Graduation Certificate</span>
+                        <input type="file" id="file1" name="files1[]" multiple="multiple">
+                        
+                    </div>
+                   
+                    <div class="card-box">
+                        <span class="details">Recent Photo</span>
+                        <input type="file" id="file2" name="files2[]" multiple="multiple">
+                        
+                    </div>
+                </div>
+                
+
+
+
+                <div class="button">
+                    <input type="submit" name="mregsub" id="" value="Register">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
